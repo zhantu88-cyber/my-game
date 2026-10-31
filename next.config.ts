@@ -24,7 +24,8 @@ const nextConfig: NextConfig = {
     return config;
   },
   // Enable standalone output for Docker
-  output: "standalone",
+  output: "export",
+  images: { unoptimized: true },
   // Experimental features
   experimental: {
     // Enable server actions
